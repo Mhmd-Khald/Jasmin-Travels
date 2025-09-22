@@ -1,10 +1,5 @@
 # ✈️ Jasmin Travels – ASP.NET Core MVC Travel Agency System  
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Localization](https://img.shields.io/badge/EN-AR-blue)]()  
-[![Payments](https://img.shields.io/badge/Stripe-Integrated-purple)]()  
-
 ---
 
 ## 📌 Important Note
