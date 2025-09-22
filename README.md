@@ -1,7 +1,5 @@
 # ✈️ Jasmin Travels – ASP.NET Core MVC Travel Agency System  
 
-![Jasmin Travels](https://via.placeholder.com/900x200.png?text=Jasmin+Travels+System)  
-
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 [![Localization](https://img.shields.io/badge/EN-AR-blue)]()  
@@ -25,8 +23,7 @@ Key features include:
 - Online reservations with **Stripe checkout**  
 - Ratings & comments for packages  
 - Contact forms with admin management  
-- Admin dashboard with roles, users, packages, reservations, and content management  
-- Localization (English & Arabic)  
+- Admin dash with roles, users, packages, reservations, and content management   
 - Email notifications & file handling  
 
 ---
@@ -34,7 +31,7 @@ Key features include:
 ## 🚀 Features
 
 ### 👤 Authentication & Accounts
-- Register, login, logout  
+- sign up, Sign in, logout  
 - Forget/Reset password with email verification  
 - Role-based access (User/Admin)  
 
@@ -59,13 +56,9 @@ Key features include:
 - Public contact form (name, email, subject, message)  
 - Admin panel for managing submissions  
 
-### 📊 Admin Dashboard
-- Manage **Packages, Reservations, Comments, Ratings, ContactUs, Users, Roles**  
+### 📊 Admin Dash
+- Manage **Packages, Reservations, Comments, Ratings, Contact Us, Users, Roles**  
 - Dashboard cards with latest updates  
-
-### 🌐 Localization
-- English / Arabic support  
-- Language switcher in UI  
 
 ### ✉️ Email Notifications
 - Password reset emails via Gmail SMTP  
@@ -80,7 +73,6 @@ Key features include:
 - **AutoMapper**  
 - **Stripe Checkout**  
 - **SQL Server**  
-- **Localization (EN/AR)**  
 - **Bootstrap / Razor Views**  
 
 ---
@@ -95,54 +87,47 @@ Key features include:
 - PackageRating  
 - ContactUs  
 
-### **ViewModels**
-- Auth → Login, Register, ForgetPassword, ResetPassword  
-- Packages → PackagesViewModel, PackageRatingViewModel, CommentsViewModel  
-- Reservations → ReservationsViewModel  
-- Contacts → ContactUsViewModel  
-- Admin → RoleViewModel, UserViewModel, AllModels  
-
 ### **Repositories & Interfaces**
 - GenericRepository / IGenericRepository  
-- PackageRepository / IPackageRepository  
-- ReservationRepository / IReservationRepository  
-- RatingRepository / IRatingRepository  
-- CommentsRepository / ICommentsRepository  
-- ContactUsRepository / IContactUsRepository  
+- PkgRepo / IPkgRepo
+- ResRepo / IReRepo
+- RatingRepo / IRatingRepo  
+- CommentsRepository / ICommentsRep  
+- ContactRepo / IContactRepo  
 
 ### **Specifications**
-- Package with Ratings & Comments  
-- Reservations with Packages  
-- Comments with Packages  
-- Ratings with Packages  
+- Pkg with Ratings & Comments  
+- Res with Pkg  
+- Comments with Pkg  
+- Ratings with Pkg  
 
 ### **AutoMapper Profiles**
-- PackagesProfile  
-- ReservationsProfile  
-- PackageCommentsProfile  
-- PackageRatingProfile  
-- ContactUsProfile  
+- PkgsProfile  
+- ResProfile  
+- PkgCommentsProfile  
+- PkgRatingProfile  
+- ContactProfile  
 - RoleProfile  
 - UserProfile  
 
 ### **Controllers**
-- AccountController  
+- AccController  
 - HomeController  
-- PackageController  
-- ReservationController  
-- CommentsController  
-- RatingController  
-- ContactUsController  
-- jasminDashBoardController  
+- PkgController  
+- ResController  
+- CmmentsController  
+- RatController  
+- ContactController  
+- jasmincrController  
 - RoleController  
 - UserController  
 - languageController  
 
 ### **Views**
-- Auth → Login, Register, ForgetPassword, ResetPassword  
-- Public → Index, AboutUs, Packages, PackageDetails, ContactUs, Reservation, Terms, Policy, PaymentAndRefund  
-- Admin → Packages (CRUD), Reservations (CRUD), Comments, Ratings, ContactUs, Users (CRUD), Roles (CRUD)  
-- Layouts → _Layout, _AuthLayout, DashBoardLayout, Shared partials  
+- Auth → Signin, logup, ForgetPassword, ResetPassword  
+- Public → Index, AboutUs, Pkg, PkgDetails, ContactUs, Res, Terms, Policy, PaymentAndRefund  
+- Admin → Pkg (CRUD), Res (CRUD), Cmments, Ratings, Contact, Us (CRUD), Roles (CRUD)  
+- Layouts → _Layout, _AuthLayout, DashLayout, Shared partials  
 
 ---
 
@@ -161,5 +146,3 @@ Key features include:
 
 ---
 
-## 📄 License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file.  
